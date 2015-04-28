@@ -1,6 +1,6 @@
 import React from 'react';
 import './app.css';
-import leaflet from "leaflet";
+import L from 'leaflet';
 
 var Map = React.createClass({
 
@@ -13,13 +13,22 @@ var Map = React.createClass({
     },
 
     setupMap: function () {
-        this.map.setView([this.props.lat, this.props.lon], this.props.zoom);        	
+        this.map.setView([this.props.lat, this.props.lon], this.props.zoom);
     },
-   
+	componentDidMount: function () {
+
+        if (this.props.createMap) {
+            this.map = this.props.createMap(this.getDOMNode());
+        } else {
+            this.map = this.createMap(this.getDOMNode());
+        }
+
+        this.setupMap();
+    },
     render: function() {
-        return (<div className="map"></div>);
+        return (<div className="map"> {this.props.map} <div/>);
     }
 
 });
 
-React.render (<Map lat="60.0" lon="10.0" zoom="10"/>, document.body)
+React.render(<Map lat="60.0" lon="10.0" zoom="10" />, document.body);
