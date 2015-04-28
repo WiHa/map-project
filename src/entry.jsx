@@ -7,7 +7,7 @@ var Map = React.createClass({
     createMap: function (element) {
       var map = L.map(element);
 	 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	 	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
      }).addTo(map);
         return map;
     },
@@ -26,7 +26,7 @@ var Map = React.createClass({
         this.setupMap();
     },
     render: function() {
-        return (<div className="map"> {this.props.map} <div/>);
+        return (<div className="map"> {this.props.map} </div>);
     }
 
 });
