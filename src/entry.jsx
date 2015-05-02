@@ -15,7 +15,7 @@ var Map = React.createClass({
      var marker = L.marker([52.365070, 4.891827])
       .bindPopup('<iframe width="420" height="315" src="https://www.youtube.com/embed/yd-t7OkBF3g" frameborder="0" allowfullscreen></iframe>').openPopup()
       .addTo(map);
-        return map;
+    return map;
     },
 
     setupMap: function () {
@@ -37,5 +37,6 @@ var Map = React.createClass({
     }
 
 });
+
 
 React.render(<Map lat="52.3710" lon="4.900" zoom="14" />, document.body);
