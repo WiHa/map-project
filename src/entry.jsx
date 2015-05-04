@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './app.css';
+import './mapstyles.css';
 import L from 'leaflet';
 import RL from "react-leaflet";
 
