@@ -1,4 +1,3 @@
-
 .map {
   	position:absolute;
   	top:0;
@@ -14,21 +13,14 @@ a {
 }
   
 a:hover, a:active {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: #FDF3E7;
+  color: #000000  ;
     }
 
-.dropdownitem {
-  padding-right: 12px;
-  background-color:#B3B3B3;
-}
 
-.dropdownitem:hover {
-  background-color: #000000;	
-}
 .header {
   display: block;
-  background-color:#B3B3B3;
+  background: #7E8F7C url("../build/Mapprojectlogosmall.png") no-repeat;
   opacity: 0.6;
   width: 100%;
  
@@ -51,7 +43,7 @@ a:hover, a:active {
  margin: none;
  font-weight: bold;
  color: #000000;
- background-color: #B3B3B3;
+ background-color: #7E8F7C;
  text-align: center;
  padding: 8px;
  text-decoration: none;
@@ -60,7 +52,7 @@ a:hover, a:active {
 
 .listitem {
   float: right;
-  font: 12px sans-serif;
+  font: 12px serif;
   display: block;
   position: relative;
   padding: 10px 12px;
@@ -73,7 +65,7 @@ a:hover, a:active {
 }
 
 ul li {
-font:  12px sans-serif;
+font:  12px serif;
 }
 
 
@@ -113,8 +105,4 @@ ul li:hover ul {
 .title {
   text-align: center;
 }  
-  
-
-
-
 
