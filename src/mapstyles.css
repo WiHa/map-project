@@ -20,7 +20,7 @@ a:hover, a:active {
 
 .header {
   display: block;
-  background: #7E8F7C url("../build/Mapprojectlogosmall.png") no-repeat;
+  background: #7E8F7C;
   opacity: 0.6;
   width: 100%;
  
@@ -106,3 +106,6 @@ ul li:hover ul {
   text-align: center;
 }  
 
+.logo {
+  text-align: center;
+}
