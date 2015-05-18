@@ -35,7 +35,7 @@ var Map = React.createClass({
             // April 1st 2001
             [ 4.902281, 52.368078, 'On  April 1st 2001, four couples were wed by mayor Job Cohen. Anne-Marie Thus and Hélène Faasen become the first two women in the world to legally marry.<br><a href="www.news.com.au/world/worlds-first-legally-wed-lesbian-couple-celebrates-their-10th-wedding-anniversary/story-e6frfkyi-1226030866529" target="_blank">Interview</a>' ],
 			//Monument Deaf Jews
-			[ 4.902281, 52.368078, 'The world remained deaf. The first monument for deaf victims of the Second World War.<br><img src="/project-images/dovenshoah.jpg"></img>' ],
+			[ 4.902281, 52.368078, 'The world remained deaf. The first monument for deaf victims of the Second World War.<br><img src="../project-images/dovenshoah.jpg"></img>' ],
 			//Education for the Blind.
             [ 4.819959, 52.378813, 'In 1808 the Institute for the Education of the Blind is founded in Amsterdam, the first school for the blind.' ],
             //River Kwai
