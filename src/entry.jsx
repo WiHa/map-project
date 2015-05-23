@@ -61,7 +61,6 @@ var Map = React.createClass({
             var lat = markers[i][1];
             var popupText = markers[i][2];
             var initIcon = L.Icon.extend({options: {iconUrl: markers[i][3], popupAnchor:  [5, 7]} });
-            var choiceIcon = L.Icon.extend({options: {iconUrl: markers[i][4], popupAnchor:  [5, 7]} });
             var id = [i]
             var markerLocation = new L.LatLng(lat, lon);
             var marker = new L.marker(markerLocation, {icon: new initIcon});
@@ -69,10 +68,10 @@ var Map = React.createClass({
 
              marker.bindPopup(popupText);
 
-
-            marker.on('click', function(e){
-               e.target.setIcon( new choiceIcon)
-            });
+            marker.on('click', function(currentMarkerData, e){
+            var choiceIcon = L.Icon.extend({options: {iconUrl: currentMarkerData[4], popupAnchor:  [5, 7]} }); 
+            e.target.setIcon( new choiceIcon)}.bind(this, markers[i])
+            );
        }
     return map
  },
