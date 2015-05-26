@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './mapstyles.css';
+import '../styles/mapstyles.css';
 import L from 'leaflet';
 import RL from "react-leaflet";
 import imgSrc from '../project-images/dovenshoah.jpg';
@@ -17,7 +17,7 @@ import warHistChoice from '../project-images/war_2.png';
 
 
 var Map = React.createClass({
-  createMap: function (element) {
+   createMap: function (element) {
     var map = L.map(element);
      L.tileLayer('http://tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -26,7 +26,7 @@ var Map = React.createClass({
 
     var markers = [
     		//KVV
-            [ 4.891827, 52.365070, '<iframe width="420" height="315" src="https://www.youtube.com/embed/yd-t7OkBF3g" frameborder="0" allowfullscreen></iframe>', femHist, femHistChoice  ],
+            [ 4.891827, 52.365070, '<iframe width="420" height="315" src="https://www.youtube.com/embed/yd-t7OkBF3g" frameborder="0" allowfullscreen></iframe> <button className="selected"> Select </button>', femHist, femHistChoice  ],
             //1st vrouwelijke politieagenten
             [ 4.89356, 52.373228, '<iframe width="420" height="315" src="https://www.youtube.com/embed/eSqB_Zln9Fo" frameborder="0" allowfullscreen></iframe>', femHist, femHistChoice ],
             //Major Bosshardt
@@ -56,11 +56,12 @@ var Map = React.createClass({
 
          //Loop through the markers array
          for (var i=0; i<markers.length; i++) {
-
+         	var opacity = 1
+         	var selected = false
             var lon = markers[i][0];
             var lat = markers[i][1];
             var popupText = markers[i][2];
-            var initIcon = L.Icon.extend({options: {iconUrl: markers[i][3], popupAnchor:  [5, 7]} });
+            var initIcon = L.Icon.extend({options: {iconUrl: markers[i][3], popupAnchor:  [5, 7], selected: selected, opacity: opacity} });
             var id = [i]
             var markerLocation = new L.LatLng(lat, lon);
             var marker = new L.marker(markerLocation, {icon: new initIcon});
@@ -68,11 +69,16 @@ var Map = React.createClass({
 
              marker.bindPopup(popupText);
 
-            marker.on('click', function(currentMarkerData, e){
-            var choiceIcon = L.Icon.extend({options: {iconUrl: currentMarkerData[4], popupAnchor:  [5, 7]} }); 
+
+           var button = document.getElementsByClassName(".selected");
+
+            marker.on('click', function(markerData, e){
+            var choiceIcon = L.Icon.extend({options: {iconUrl: markerData[4], popupAnchor:  [5, 7], selected: true} }); 
             e.target.setIcon( new choiceIcon)}.bind(this, markers[i])
+
             );
-       }
+      
+  		 }
     return map
  },
 
@@ -91,6 +97,11 @@ var Map = React.createClass({
         this.setupMap();
     },
 
+pageLoad: function(){
+	var overlay = document.getElementById('hugeAnnoyingAdvertisement');
+ 	overlay.style.display = 'block';
+	
+},
  render: function() {
         return (<div className="map"> </div>);
     }

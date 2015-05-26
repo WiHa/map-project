@@ -31,7 +31,7 @@ quotes[11]='History is not about dates and quotes and obscure provisos. History 
 
 quotes[12]='History is the version of past events that people have decided to agree upon. <i>-Napoleon Bonaparte</i>'
 
-quotes[13]='History is the version of past events that people have decided to agree upon. <i>-James A. Baldwin</i>'
+quotes[13]='I am what time, circumstance, history, have made of me, certainly, but I am also, much more than that. So are we all. <i>-James A. Baldwin</i>'
 
 quotes[14]='The dogmas of the quiet past are inadequate to the stormy present. The occasion is piled high with difficulty, and we must rise with the occasion. As our case is new, so we must think anew and act anew. <i>-Abraham Licoln</i>'
 
@@ -61,7 +61,11 @@ quotes[26]='Programmers are isolated. They sit in their cubicle; they don\'t thi
 
 quotes[27]='It should be noted that no ethically -trained software engineer would ever consent to write a DestroyBaghdad procedure. Basic professional ethics would instead require him to write a DestroyCity procedure, to which Baghdad could be given as a parameter. <i>-Nathanial S. Borenstein</i>'
 
+quotes[28]='Let us try to teach generosity and altruism, because we are born selfish. Let us understand what our own selfish genes are up to, because we may then at least have the chance to upset their designs, something that no other species has ever aspired to do. <i>-Richard Dawkins</i>'
 
+quotes[29]='Chance is just a word expressing ignorance. <i>-Richard Dawkins</i>'
+
+quotes[30]='No people come into possession of a culture without having paid a heavy price for it. <i>-James A. Baldwin</i>'
 
 var whichquote=Math.floor(Math.random()*(quotes.length))
 document.write(quotes[whichquote])

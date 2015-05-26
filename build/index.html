@@ -6,13 +6,31 @@
     <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <script type='text/javascript' src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-	<header class="header">
-	  <section>
+  <header class="header">
+ 	  <section>
          <nav>
              <ul class="list">
+                <li class="listitem"><a class="link" id="open-overlay" href="index.html">The Map</a></li>
+                <li class= "listitem"><a class="link" id="open-overlay" href="about.html">About the project</a></li>
+                <li class="listitem"> <a class="link" href="#overlay" id="open-overlay">What is this?</a></li>
                 
-                <li class= "listitem"><a class="link" href="about.html">About the project</a></li>
-                 <li class="listitem"><a class="link" href="index.html">The Map</a></li>
+
+                      <div id="overlay">
+                     <a href="#" class="close">&times;</a>
+                        <div style="height:20%"></div>
+
+                        <h2 style="font-size:35px">Diminished Marginal History</h2>
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:22px;">It's a map with markers that show you some of the history of Amsterdam, of course!
+                        You get to choose which history gets to be a part of the 'canon' and which ones get diminished. By law of 
+                        diminished marginal utility you cannot choose all of them, so you'll have to decide. Will you go for the 
+                        ones we already know, or will you rewrite history, finding something else important on the map?</p> 
+                        <p style="font-size:20px;"> N.B.: Not all functionality is working. The 'Choose' button in the popups is not yet activated, but let's pretend it is.</p>
+
+                    </div>
+                    <div id="mask" onclick="document.location='#';"></div>
              </ul>
            </nav>
       </section>
