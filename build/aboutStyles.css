@@ -74,11 +74,18 @@
 .textbox {
   background: #FDF3E7 url('./Mapprojectlogosmall.png') no-repeat;
   width: 100%;
-  height: 500%;
+  height: relative;
   padding: 30px;
   border-radius: 25px;
 }
 
+.footer{
+  background: #FDF3E7;
+  width: 100%;
+  height: relative;
+  padding: 30px;
+  border-radius: 25px;
+}
 /* Nav Trigger */
 .nav-trigger {
   /* critical styles - hide the checkbox input */
@@ -191,6 +198,8 @@ code {
   font-size: 1em;
   color:#3B3738;
   width: 175px;
+  padding-top: 100px;
+  position: relative;
   float: right;
 }
 

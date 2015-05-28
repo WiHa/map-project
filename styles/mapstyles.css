@@ -176,6 +176,20 @@ ul li ul {
     border-radius:10px;
 }
 
+.button{
+  padding:10px 5px;
+  background:#C63D0F;
+  color: #FDF3E7;
+  text-decoration:none;
+  display:inline-block;
+  margin:20px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -o-border-radius:10px;
+  border-radius:10px;
+  box-shadow: none;
+}
+
 p{
   font-family: "Trebuchet MS";
 }
