@@ -102,23 +102,23 @@ var Map = React.createClass({
          for (var i=0; i<markers.length; i++) {
          	var opacity = 1
          	var selected = false
-            var lon = markers[i][0];
-            var lat = markers[i][1];
-            var popupText = markers[i][2];
-            var initIcon = L.Icon.extend({options: {iconUrl: markers[i][3], popupAnchor:  [5, 7], selected: selected, opacity: opacity} });
-            var id = [i]
-            var markerLocation = new L.LatLng(lat, lon);
-            var marker = new L.marker(markerLocation, {icon: new initIcon});
-             map.addLayer(marker);
+          var lon = markers[i][0];
+          var lat = markers[i][1];
+          var popupText = markers[i][2];
+          var initIcon = L.Icon.extend({options: {iconUrl: markers[i][3], popupAnchor:  [5, 7], selected: selected, opacity: opacity} });
+          var id = [i]
+          var markerLocation = new L.LatLng(lat, lon);
+          var marker = new L.marker(markerLocation, {icon: new initIcon});
+          map.addLayer(marker);
 
-             marker.bindPopup(popupText);
+          marker.bindPopup(popupText);
 
 
-           var button = document.getElementsByClassName(".selected");
+          var button = document.getElementsByClassName(".selected");
 
-            marker.on('click', function(markerData, e){
-            var choiceIcon = L.Icon.extend({options: {iconUrl: markerData[4], popupAnchor:  [5, 7], selected: true} }); 
-            e.target.setIcon( new choiceIcon)}.bind(this, markers[i])
+          marker.on('click', function(markerData, e){
+          var choiceIcon = L.Icon.extend({options: {iconUrl: markerData[4], popupAnchor:  [5, 7], selected: true} }); 
+          e.target.setIcon( new choiceIcon)}.bind(this, markers[i])
 
             );
 
