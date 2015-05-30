@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --hot --progress --colors --content-base build",
-    "deploy": "NODE_ENV=production webpack -p",
+    "deploy": "webpack -p",
     "test": "node webpack-mocha.config.js"
   },
   "devDependencies": {
