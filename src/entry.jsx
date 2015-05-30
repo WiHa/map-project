@@ -61,9 +61,9 @@ var Map = React.createClass({
             [ 4.885188, 52.365276, 'Former Café De La Paix, where in September 1946 150 people gathered for the founding of the Shakespeare Club. It was the largest gathering of gay people in the country until then. The Shakespeare Club is now known as the C.O.C., the oldest surviving LGBT organisation.<br><a href="http://nl.wikipedia.org/wiki/Nederlandse_Vereniging_tot_Integratie_van_Homoseksualiteit_COC" target="_blank">Dutch wikipedia</a><button class="button"> Choose </button>', femGayHist, femGayHistChoice ],
             // April 1st 2001
             [ 4.902281, 52.368078, 'On  April 1st 2001, four couples were wed by mayor Job Cohen. Anne-Marie Thus and Hélène Faasen become the first two women in the world to legally marry.<br><a href="www.news.com.au/world/worlds-first-legally-wed-lesbian-couple-celebrates-their-10th-wedding-anniversary/story-e6frfkyi-1226030866529" target="_blank">Interview</a><button class="button"> Choose </button>', femGayHist, femGayHistChoice ],
-			//Monument Deaf Jews
-			[ 4.906952, 52.366255, 'The world remained deaf. The first monument for deaf victims of the Second World War.<br><img src=" '+ imgSrc+'"><button class="button"> Choose </button>', disHist, disHistChoice ],
-			//Education for the Blind.
+			      //Monument Deaf Jews
+			      [ 4.906952, 52.366255, 'The world remained deaf. The first monument for deaf victims of the Second World War.<br><img src=" '+ imgSrc+'"><button class="button"> Choose </button>', disHist, disHistChoice ],
+			      //Education for the Blind.
             [ 4.819959, 52.378813, 'In 1808 the Institute for the Education of the Blind is founded in Amsterdam, the first school for the blind.<button class="button"> Choose </button>', disHist, disHistChoice ],
             //River Kwai
             [ 99.532811, 14.022780, 'Well done! You looked beyond the frame you were given. This is the River Kwai, famous for its railway bridge built by Japan in WWII. But did you know that Thailand was never occupied? And that it was the only country in South East Asia to not be colonised?<br><a href="www.stickmanbangkok.com/ReadersSubmissions2014/reader8591.htm" target="_blank">Why Thailand Was Never Colonized</a><button class="button"> Choose </button>', warHist, warHistChoice ],
@@ -81,22 +81,22 @@ var Map = React.createClass({
             [4.891368, 52.373186, "Known as the Royal Palace of Amsterdam, this house is actually the former city's Town Hall that became a palace after Louis Napoleon became king of the country.<br> <a href='http://www.paleisamsterdam.nl/en/the-palace/history/napoleonic-palace/city-hall-becomes-napoleonic-palace'>Official Website</a><button class='button'> Choose </button>", domHist, domHistChoice ],
             //Royal Palace
             [4.891368, 52.373186, "The Town Hall, as it was before Louis Napoleon. The place where Amsterdam business was conducted in the Golden Age. The place where the West-Indian Company was founded, that had the exclusive rights to trade people in the Atlantic area. Most people in the WIC were also politically active as mayors, council members etc. The WIC, in the first 100 years of its existence, had already shipped a quarter of a million Africans across the ocean under force.<button class='button'> Choose </button>", slaveHist, slaveHistChoice],
-       		//Lords XVII
-       		[4.897986, 52.371108, 'The Lords Seventeen was the name of the central board of the East India Company.<br> <img src=" '+ lords+'"> <a href="http://european-heritage.org/netherlands/alkmaar/dutch-east-india-company"> More info</a><button class="button"> Choose </button>' , domHist, domHistChoice ],
-       		//Heineken
-       		[4.891491, 52.357941, 'The original brewery, bought by Gerard Adriaan Heineken on February 15th, 1864. Since then, it developed to become a famous, prize winning beer brewery, sold in over 170 countries. <a href="http://en.wikipedia.org/wiki/Heineken"> Wikipedia </a><button class="button"> Choose </button>', domHist, domHistChoice ],
-       		//Marie Heineken
-       		[4.891457, 52.357305, 'The Heineken plein, actually the Marie Heineken plein, and not named after the brewery, but after a niece of Gerard Adriaan Heineken. Yet the choice of her name was mostly due to the area being named after painters, and the city wanting to name that square to the brewery of Marie\'s uncle.<button class="button"> Choose </button>', femHist, femHistChoice],
-       		//Nicolaes Tulp
-       		[4.884696, 52.373545, 'Nicolaes Tulp was a surgeon and from 1654 he was mayor of Amsterdam four times. His house can be recognised by the signboard above the door. Painted by Rembrandt in one of his most famous paintings: <img src=" '+tulp+' "> <a href="http://en.wikipedia.org/wiki/Nicolaes_Tulp">Wiki</a><button class="button"> Choose </button>', domHist, domHistChoice],
-       		//André Hazes
-       		[4.893199, 52.355512, 'In 2005 a statue was raised on the corner of the Albert Cuypstraat for folk singer André Hazes, who died a year before. He was discovered in a pub, by comedian and singer Johnny Kraaijkamp Sr., who saw 8-year old André singing on Liberation Day.<button class="button"> Choose </button>', domHist, domHistChoice],
-       		//Olympics
-       		[4.85413, 52.343420, 'In 1928 the Summer Olympics were held in Amsterdam. For a lot of data and participating countries, see <a href="http://en.wikipedia.org/wiki/1928_Summer_Olympics"> Wikipedia</a><button class="button"> Choose </button>', domHist, domHistChoice],
-       		//Deaf olympics
-       		[4.85413, 52.343420, 'In 1928, for the second time in the history of the world, the Deaflympics were held. Since deaf athletes need other signs than gunshots, the deaflympics had started four years earlier in Paris. They still go on today and are generally seen as a very early precursor of the paralympics, that had its first edition as late as 1960.<button class="button"> Choose </button>', disHist, disHistChoice],
-       		//Café 't Mandje
-       		[4.90096, 52.374840, 'The famous Café \'t Mandje, run by Bet van Buuren since 1927, an openly gay woman. She was the first pub owner that allowed openly gay people in her bar (she did not allow kissing of same sex couples on every day of the week. They got to dance with each other only on Queensday.). \'T Mandje became the most famous place for gays in the city, and remained such until the Zeedijk was runover by whores and heroin users. It closed its doors in 1982, but was reopened in 2008.<button class="button"> Choose </button>', femGayHist, femGayHistChoice ]
+       		  //Lords XVII
+       		  [4.897986, 52.371108, 'The Lords Seventeen was the name of the central board of the East India Company.<br> <img src=" '+ lords+'"> <a href="http://european-heritage.org/netherlands/alkmaar/dutch-east-india-company"> More info</a><button class="button"> Choose </button>' , domHist, domHistChoice ],
+         		//Heineken
+         		[4.891491, 52.357941, 'The original brewery, bought by Gerard Adriaan Heineken on February 15th, 1864. Since then, it developed to become a famous, prize winning beer brewery, sold in over 170 countries. <a href="http://en.wikipedia.org/wiki/Heineken"> Wikipedia </a><button class="button"> Choose </button>', domHist, domHistChoice ],
+         		//Marie Heineken
+         		[4.891457, 52.357305, 'The Heineken plein, actually the Marie Heineken plein, and not named after the brewery, but after a niece of Gerard Adriaan Heineken. Yet the choice of her name was mostly due to the area being named after painters, and the city wanting to name that square to the brewery of Marie\'s uncle.<button class="button"> Choose </button>', femHist, femHistChoice],
+         		//Nicolaes Tulp
+         		[4.884696, 52.373545, 'Nicolaes Tulp was a surgeon and from 1654 he was mayor of Amsterdam four times. His house can be recognised by the signboard above the door. Painted by Rembrandt in one of his most famous paintings: <img src=" '+tulp+' "> <a href="http://en.wikipedia.org/wiki/Nicolaes_Tulp">Wiki</a><button class="button"> Choose </button>', domHist, domHistChoice],
+         		//André Hazes
+         		[4.893199, 52.355512, 'In 2005 a statue was raised on the corner of the Albert Cuypstraat for folk singer André Hazes, who died a year before. He was discovered in a pub, by comedian and singer Johnny Kraaijkamp Sr., who saw 8-year old André singing on Liberation Day.<button class="button"> Choose </button>', domHist, domHistChoice],
+         		//Olympics
+         		[4.85413, 52.343420, 'In 1928 the Summer Olympics were held in Amsterdam. For a lot of data and participating countries, see <a href="http://en.wikipedia.org/wiki/1928_Summer_Olympics"> Wikipedia</a><button class="button"> Choose </button>', domHist, domHistChoice],
+         		//Deaf olympics
+         		[4.85413, 52.343420, 'In 1928, for the second time in the history of the world, the Deaflympics were held. Since deaf athletes need other signs than gunshots, the deaflympics had started four years earlier in Paris. They still go on today and are generally seen as a very early precursor of the paralympics, that had its first edition as late as 1960.<button class="button"> Choose </button>', disHist, disHistChoice],
+         		//Café 't Mandje
+         		[4.90096, 52.374840, 'The famous Café \'t Mandje, run by Bet van Buuren since 1927, an openly gay woman. She was the first pub owner that allowed openly gay people in her bar (she did not allow kissing of same sex couples on every day of the week. They got to dance with each other only on Queensday.). \'T Mandje became the most famous place for gays in the city, and remained such until the Zeedijk was runover by whores and heroin users. It closed its doors in 1982, but was reopened in 2008.<button class="button"> Choose </button>', femGayHist, femGayHistChoice ]
        		];
          //Loop through the markers array
          for (var i=0; i<markers.length; i++) {
