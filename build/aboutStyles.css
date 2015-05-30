@@ -85,6 +85,9 @@
   height: relative;
   padding: 30px;
   border-radius: 25px;
+  font-size: 18px;
+  font-family: "Ubuntu";
+  text-align: center;
 }
 /* Nav Trigger */
 .nav-trigger {
@@ -137,6 +140,7 @@ h3, p, h2 {
 p {
   font-family: "Roboto Slab";
   text-align: left;
+  font-size: 18px;
   width: 150%;
   margin-right: none;
   padding-right: 10px;
@@ -165,8 +169,17 @@ padding-left: 90px;
 }
 
 li {
-  font-family: "Actor";
+  font-family: "Roboto Slab";
   text-align: left;
+}
+
+.listitem {
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  text-align: left;
+  max-width: 600px;
+  margin: 10px;
+  color:#3B3738;
 }
 
 code {
@@ -175,7 +188,8 @@ code {
 }
 
 .list {
-  font-family: "Actor";
+  font-family: "Roboto Slab";
+  font-size: 18px;
   text-align: left;
   max-width: 600px;
   margin: 0 auto 1em;
@@ -197,7 +211,7 @@ code {
   text-align: right;
   font-size: 1em;
   color:#3B3738;
-  width: 175px;
+  width: 300px;
   padding-top: 100px;
   position: relative;
   float: right;
